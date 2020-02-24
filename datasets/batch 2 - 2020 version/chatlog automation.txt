@@ -1,0 +1,11 @@
+Run this command to automate:
+
+FOR /F %G IN (filename) DO twitch-chatlog %G > "pathname\%G.txt"
+
+>>This will loop through multiple executions of "twitch-chatlog" at the same time outputting it into a txt file.
+
+>>Some outputs may be empty resulting in 1kb or 0kb txt files. Recommendation: Delete it.
+
+>>Some executions may fail causing the process to become stuck. Use Ctrl+C then enter N/n, do not input Y/y (it will terminate batch process).
+
+>>Make sure the txt file contains the numbers on separate lines and contains no other special characters in that same line.

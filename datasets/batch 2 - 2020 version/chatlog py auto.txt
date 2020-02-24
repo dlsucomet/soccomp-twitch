@@ -1,0 +1,5 @@
+FOR %f IN (*) DO python ping_file.py --dataset_path %f --out %f.csv
+
+>>Run to automate
+
+>>File will output as filename.txt.csv
